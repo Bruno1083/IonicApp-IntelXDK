@@ -21,11 +21,11 @@ Canal: <http://www.youtube.com/channel/UC-8goXO6sjFuIbanvBd-jfA?sub_confirmation
 Links importantes
 =====================================================================
 
-IntelXDK
+IntelXDK:
 Caso você ainda não conheça o Intel XDK segue o link para download:
 <https://software.intel.com/pt-br/intel-xdk>
 
-Ionic Framework e Angular
+Ionic Framework e Angular:
 Para que você possa entender melhor este app é importante que saiba o minimo de 
 Ionic e Angularjs. Segue os links:
 
