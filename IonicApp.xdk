@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "c7d683c9-b778-4f80-b6bc-618d4f2d8916",
-      "lastModifiedDate": 1457542384806,
+      "lastModifiedDate": 1457768769854,
       "creationDate": 1457539527552
     },
     "XDK-app-designer": "true",
@@ -83,7 +83,7 @@
         },
         "isActive_": true,
         "appName_": "IonicApp",
-        "appID_": "xdk.intel.blank.ad.template.crosswalk",
+        "appID_": "com.IonicApp",
         "appAccess_": {
           "mode": "legacy",
           "network": [
@@ -99,7 +99,7 @@
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "15",
         "appVersion_": "0.0.1",
-        "appAuthor_": "Intel XDK",
+        "appAuthor_": "Sergio Costa",
         "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
         "appVersionCode_": "1"
       },
@@ -142,7 +142,7 @@
           "ios-target": "6",
           "ios-configuration": "adhoc"
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "IonicApp",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
@@ -172,7 +172,7 @@
           "windows-publisher-display-name": "",
           "windows-publisher-id": ""
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "IonicApp",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
