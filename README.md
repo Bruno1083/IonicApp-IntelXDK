@@ -13,9 +13,11 @@ Informações Importantes
 =====================================================================
 
 Para que a aplicação funcione a apiRecupera.php deve estar dentro de seu servidor.
-Ex: Disco Local (C:)>www>api>apiRecupera.php
+Ex se o servidor for Wamp Server: Disco Local (C:)>wamp>www>api>apiRecupera.php
 
-E utilizando o endereço http://localhost/api/apiRecupera.php você conseguirá recuperar os dados.
+E utilizando o endereço http://localhost/sua-pasta-que-pode-ser-api/apiRecupera.php 
+você conseguirá recuperar os dados do banco criado chamado de aula com a tabela
+usuarios.
 
 Esta aplicação sofrerá modificações no decorrer das aulas criadas no canal então
 se inscreva para que saiba quais modificações foram feitas e como está esta documentação

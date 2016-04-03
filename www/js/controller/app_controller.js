@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	angular.module("myApp").controller("initCtrl", function($scope, Data){
+	angular.module("myApp").controller("initCtrl", function($scope, Data, $ionicModal){
 		$scope.home = "Contatos";
 		$scope.perfil = "Perfil";
 
@@ -22,6 +22,23 @@
 			});
 		};
 
+		$ionicModal.fromTemplateUrl('cadastro.html',{
+			scope: $scope,
+    			animation: 'slide-in-up'
+
+		}).then(function(modal) {
+		    $scope.modal = modal;
+		  });
+
+
+		 $scope.abreModal = function(){
+		 	$scope.modal.show();
+		 }; 	
+		
+		$scope.fechaModal = function(){
+		 	$scope.modal.hide();
+		 }; 	
+		 
 		getData();
 	});
 })();

@@ -1,6 +1,7 @@
 <ion-view view-title="{{home}}">
 	<ion-content>
 		<h1>{{home}}</h1>
+		<button class="button" ng-click="abreModal()">Abre Modal</button>
 		<ion-list ng-repeat="contato in contatos">
 			<ion-item>
 				<h1 class="positive">{{contato.nome}}</h1>
