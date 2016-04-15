@@ -30,6 +30,12 @@
 					templateUrl:"views/perfil.html"
 				}
 			}
+		})
+
+		.state("menu.home.cadastro", {
+			url:"/cadastro",
+			templateUrl:"views/cadastro.html"
+			
 		});
 
 

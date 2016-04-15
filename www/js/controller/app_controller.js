@@ -22,7 +22,7 @@
 			});
 		};
 
-		$ionicModal.fromTemplateUrl('cadastro.html',{
+		$ionicModal.fromTemplateUrl('views/cadastro.html',{
 			scope: $scope,
     			animation: 'slide-in-up'
 
