@@ -40,5 +40,19 @@
 		 }; 	
 		 
 		getData();
+
+		$scope.cadastroUsuario = function(cadastro) {
+			Data.setData(cadastro).success(function(data) {
+				alert(data);
+				$scope.modal.hide();
+				getData();
+			}).error(function(data) {
+				alert(data);
+			});
+
+			console.log(cadastro);
+		};
+
+
 	});
 })();

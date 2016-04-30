@@ -16,17 +16,17 @@
 
 
 		<div class="list">
-		  <label class="item item-input item-floating-label">
+		  <label class="item item-input item-floating-label" >
 		    <span class="input-label">Nome</span>
-		    <input type="text" placeholder="Nome">
+		    <input type="text" placeholder="Nome" ng-model="cadastro.nome">
 		  </label>
 
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Email</span>
-		    <input type="text" placeholder="Email">
+		    <input type="text" placeholder="Email" ng-model="cadastro.email">
 		  </label>
 		</div>
-		<button class="button button-full button-positive">Enviar</button>
+		<button class="button button-full button-positive" ng-click="cadastroUsuario(cadastro)">Enviar</button>
 
             </ion-content>
 
