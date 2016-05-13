@@ -1,5 +1,5 @@
 <ion-modal-view>
-        
+
           <ion-header-bar  class="bar-positive">
 
                    <h1 class="title">Modal</h1>
@@ -7,27 +7,37 @@
 
             <button class="button button-clear button-icon ion-close" ng-click="fechaModal()"></button>
 
-            
+
           </ion-header-bar>
-        
+
             <ion-content>
 
                     <h2>Cadastro</h2>
-
-
+		<form name="formCadastro">
 		<div class="list">
 		  <label class="item item-input item-floating-label" >
 		    <span class="input-label">Nome</span>
-		    <input type="text" placeholder="Nome" ng-model="cadastro.nome">
+		    <input type="text" placeholder="Nome" name="nome" ng-model="cadastro.nome" ng-required="true">
+		    <span class="assertive" ng-show="formCadastro.nome.$invalid && formCadastro.nome.$dirty">Pereencha o campo nome corretamente!</span>
 		  </label>
 
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Email</span>
-		    <input type="text" placeholder="Email" ng-model="cadastro.email">
-		  </label>
-		</div>
-		<button class="button button-full button-positive" ng-click="cadastroUsuario(cadastro)">Enviar</button>
+		    <input type="email" placeholder="Email"  name="email" ng-model="cadastro.email" ng-required="true">
+		    <span class="assertive" ng-show="formCadastro.email.$invalid && formCadastro.email.$dirty">Pereencha o campo email corretamente!</span>
 
+		  </label>
+
+		  <label class="item item-input item-floating-label">
+		    <span class="input-label">Senha</span>
+		    <input type="password" placeholder="Senha"  name="senha" ng-model="cadastro.senha" ng-required="true">
+		    <span class="assertive" ng-show="formCadastro.senha.$invalid && formCadastro.senha.$dirty">Pereencha o campo senha corretamente!</span>
+
+		  </label>
+
+		</div>
+		</form>
+		<button class="button button-full button-positive" ng-disabled="formCadastro.$invalid" ng-click="cadastroUsuario(cadastro)">Enviar</button>
             </ion-content>
 
   </ion-modal-view>

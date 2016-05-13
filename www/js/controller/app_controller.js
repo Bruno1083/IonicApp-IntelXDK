@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	angular.module("myApp").controller("initCtrl", function($scope, Data, $ionicModal){
+	angular.module("myApp").controller("initCtrl", function($scope, Data, $ionicModal, $location){
 		$scope.home = "Contatos";
 		$scope.perfil = "Perfil";
 
@@ -53,6 +53,13 @@
 			console.log(cadastro);
 		};
 
+		$scope.perfilUsuario = function(id) {
+			$scope.usuarioPerfil = $scope.contatos.filter(function(element) {
+				return element.id == id;
+			});
+			console.log($scope.usuarioPerfil);
+			$location.path("/menu/perfil");
+		};
 
 	});
 })();

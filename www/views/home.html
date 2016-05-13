@@ -7,7 +7,7 @@
 	<ion-content>
 		<h1>{{home}}</h1>
 		<ion-list ng-repeat="contato in contatos | orderBy: 'nome' ">
-			<ion-item>
+			<ion-item ng-click="perfilUsuario(contato.id)">
 				<h1 class="positive">{{contato.nome}}</h1>
 				<p>{{contato.email}}</p>
 			</ion-item>

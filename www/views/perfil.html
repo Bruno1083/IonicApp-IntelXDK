@@ -1,5 +1,13 @@
 <ion-view view-title="{{perfil}}">
+	<ion-nav-bar class="bar-positive">
+	<ion-nav-back-button class="button-clear"></ion-nav-back-button>
+	</ion-nav-bar>
 	<ion-content>
 		<h1>{{perfil}}</h1>
+		<div ng-repeat="usuario in usuarioPerfil">
+			<p>{{usuario.nome}}</p>
+			<p>{{usuario.senha}}</p>
+
+		</div>
 	</ion-content>
 </ion-view>

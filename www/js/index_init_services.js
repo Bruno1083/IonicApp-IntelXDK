@@ -10,5 +10,6 @@
 /*global angular*/
  angular.module('myApp',['ionic']).config(['$controllerProvider', function($controllerProvider) {
 	$controllerProvider.allowGlobals();
-}]);
-
+}]).config(function ($ionicConfigProvider) {
+	$ionicConfigProvider.backButton.previousTitleText(false).text("").icon("ion-arrow-left-c");	
+});

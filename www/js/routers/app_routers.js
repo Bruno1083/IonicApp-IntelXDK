@@ -18,7 +18,8 @@
 			url:"/home",
 			views:{
 				'menuContent':{
-					templateUrl:"views/home.html"
+					templateUrl:"views/home.html",
+
 				}
 			}
 		})
@@ -27,7 +28,7 @@
 			url:"/perfil",
 			views:{
 				'menuContent':{
-					templateUrl:"views/perfil.html"
+					templateUrl:"views/perfil.html",
 				}
 			}
 		})
