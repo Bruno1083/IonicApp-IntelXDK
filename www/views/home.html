@@ -5,6 +5,7 @@
 		</div>
 
 	<ion-content>
+		{{nome}}
 		<h1>{{home}}</h1>
 		<ion-list ng-repeat="contato in contatos | orderBy: 'nome' ">
 			<ion-item ng-click="perfilUsuario(contato.id)">
