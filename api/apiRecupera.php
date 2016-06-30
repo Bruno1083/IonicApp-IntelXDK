@@ -6,9 +6,9 @@ $data = file_get_contents("php://input");
 $objData = json_decode($data);
 
 
-$dns = "mysql:host=localhost;dbname=aula";
-$user = "root";
-$pass = "";
+$dns = "mysql:host=mysql.hostinger.com.br;dbname=u460090852_aula";
+$user = 'u460090852_ionic';
+$pass = '123456';
 
 $counter = $objData->counter;
 $token = $objData->token;
@@ -23,7 +23,7 @@ try {
 	if ($token === "1f3d2gs3f2fg3as2fdg3re2t1we46er45" && isset($token)) {
 		
 
-	$query = $con->prepare('SELECT * FROM usuarios ORDER BY nome LIMIT '.$counter.', 5');
+	$query = $con->prepare('SELECT * FROM usuarios LIMIT '.$counter.', 15');
 
 		$query->execute();
 

@@ -3,7 +3,7 @@
 
 	angular.module("myApp").value("Config", {
 
-		getUrl: "http://localhost:82/api/api/"
+		getUrl: "http://ionicapp.esy.es/"
 	});
 
 	angular.module("myApp").service("Data", function($http, Config){

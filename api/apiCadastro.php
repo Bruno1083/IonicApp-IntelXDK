@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin:*");
 header("Content-Type: application/html; charset=UTF-8");
   
     //formulário
@@ -22,7 +22,7 @@ header("Content-Type: application/html; charset=UTF-8");
     $senha = trim($senha);
 
     // INSERE OS DADOS
-    $db = new PDO("mysql:host=localhost;dbname=aula", "root", "");
+    $db = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u460090852_aula", "u460090852_ionic", "123456");
 
 
     if($db){

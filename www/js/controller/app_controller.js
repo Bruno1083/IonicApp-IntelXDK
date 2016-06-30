@@ -31,9 +31,11 @@
 			res.executeSql("DELETE FROM USER WHERE nome = ?;",[nome]);
 		});
 
+
+		//BANCO DE DADOS ONLINE
 		var getData = function(){
 			var  params = {
-				counter: $scope.contatos.length,
+				counter: 0, //  $scope.contatos.length,
 				token:"1f3d2gs3f2fg3as2fdg3re2t1we46er45"
 			};
 
