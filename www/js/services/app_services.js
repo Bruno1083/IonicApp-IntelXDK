@@ -30,7 +30,8 @@
 				            }
 			});
 		};
-		//Areturn $http({
+		this.delData = function(id) {
+			return $http ({
 				method: "POST",
 				url: Config.getUrl + "apiDeleta.php",
 				data: id,

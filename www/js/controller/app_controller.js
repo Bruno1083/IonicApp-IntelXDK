@@ -85,7 +85,7 @@
 				["Apagar", "Cancelar"]
 			);
 			//CALLBACK
-			function apagarContato(buttonIndex') {
+			function apagarContato(buttonIndex) {
 
 				if(buttonIndex === 1){
 					Data.delData(contato.id).success(function(data) {
