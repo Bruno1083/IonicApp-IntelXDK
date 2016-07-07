@@ -1,15 +1,16 @@
 <ion-view view-title="{{home}}">
 		
-		<div class="btn-add" ng-click="abreModal()">
+		<div class="button-circle back-assertive" ng-click="abreModal()">
 			<button class="button button-icon button-clear icon ion-edit button-light"></button>
 		</div>
 
 	<ion-content>
 		<h1>{{home}}</h1>
-		<ion-list ng-repeat="contato in contatos | orderBy: 'email'">
+		<ion-list can-swipe="myswipe" ng-repeat="contato in contatos | orderBy: 'email'">
 			<ion-item ng-click="perfilUsuario(contato.id)">
 				<h1 class="positive">{{contato.nome}}</h1>
 				<p>{{contato.email}}</p>
+				<ion-option-button class="button-assertive button-info" ng-click="apagar(contato)">Apagar</ion-option-button>
 			</ion-item>
 		</ion-list>
 

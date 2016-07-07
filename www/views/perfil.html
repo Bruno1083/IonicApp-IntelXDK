@@ -1,13 +1,32 @@
-<ion-view view-title="{{perfil}}">
-	<ion-nav-bar class="bar-positive">
-	<ion-nav-back-button class="button-clear"></ion-nav-back-button>
-	</ion-nav-bar>
-	<ion-content>
-		<h1>{{perfil}}</h1>
-		<div ng-repeat="usuario in usuarioPerfil">
-			<p>{{usuario.nome}}</p>
-			<p>{{usuario.senha}}</p>
-
-		</div>
-	</ion-content>
+ <ion-view  style="background-color: #0182ba">
+   <ion-nav-bar class="bar-opacity">   
+         <ion-nav-back-button class="button-light"></ion-nav-back-button>         
+  </ion-nav-bar>
+    <ion-content  ng-repeat="usuario in usuarioPerfil">
+       
+      
+         <div class="row row-center responsive-sm">
+            
+            <div class="col col-center" style="text-align:center; height: 50%;padding: 30% 0;" >
+                <h1 class="light">{{usuario.nome}}</h1>
+                <h4 class="light">Usuário Antigo</h4>
+            </div>
+        </div>
+            
+            
+        <div class="row row-center" style="text-align:center; padding: 0; margin:0;">    
+            <div class="col col-50" style="background-color: #e800e8; height: 100px; padding-top: 15px !important">
+                <h4 class="light">{{usuario.email}}</h4>
+                <p class="light">E-mail</p>
+            </div>
+            
+            <div class="col col-50" style="background-color: #009dff; height: 100px; padding-top: 15px !important">
+                <h2 class="light">253</h2>
+                <p class="light">Indicaçôes</p>
+            </div>
+            
+        </div>
+              
+       
+    </ion-content>
 </ion-view>

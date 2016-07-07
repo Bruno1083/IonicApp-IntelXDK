@@ -15,6 +15,9 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "HelloCordova"
         }
     },
     "dependent_plugins": {}

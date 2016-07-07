@@ -30,6 +30,15 @@
 				            }
 			});
 		};
+		//Areturn $http({
+				method: "POST",
+				url: Config.getUrl + "apiDeleta.php",
+				data: id,
+				headers : {
+				                'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+				            }
+			});
+		};
 	
 	});
 })();
