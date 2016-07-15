@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "c7d683c9-b778-4f80-b6bc-618d4f2d8916",
-      "lastModifiedDate": 1467838700395,
+      "lastModifiedDate": 1468439849328,
       "creationDate": 1457539527552
     },
     "XDK-app-designer": "true",
@@ -287,29 +287,31 @@
         "preferences_": {
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Orientation": "portrait"
         },
         "isActive_": true,
         "appName_": "IonicApp",
         "appID_": "com.IonicApp",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
             "*"
           ],
           "intents": [],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
+        "certificateId_": "BkgVAzVQLkqis_41qGVWJw2",
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "15",
         "appVersion_": "0.0.1",
         "appAuthor_": "Sergio Costa",
-        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
+        "appDescription_": "App para testes",
         "appVersionCode_": "1"
       }
     },

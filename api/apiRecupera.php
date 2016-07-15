@@ -23,7 +23,7 @@ try {
 	if ($token === "1f3d2gs3f2fg3as2fdg3re2t1we46er45" && isset($token)) {
 		
 
-	$query = $con->prepare('SELECT * FROM usuarios LIMIT '.$counter.', 15');
+	$query = $con->prepare('SELECT * FROM usuarios LIMIT '.$counter.', 6');
 
 		$query->execute();
 

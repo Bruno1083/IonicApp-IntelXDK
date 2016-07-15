@@ -6,13 +6,18 @@
 
 	<ion-content>
 		<h1>{{home}}</h1>
-		<ion-list can-swipe="myswipe" ng-repeat="contato in contatos | orderBy: 'email'">
+		<ion-list can-swipe="myswipe" ng-repeat="contato in contatos | orderBy: 'nome'">
 			<ion-item ng-click="perfilUsuario(contato.id)">
 				<h1 class="positive">{{contato.nome}}</h1>
 				<p>{{contato.email}}</p>
 				<ion-option-button class="button-assertive button-info" ng-click="apagar(contato)">Apagar</ion-option-button>
 			</ion-item>
 		</ion-list>
-
+		<ion-infinite-scroll
+			    ng-show="paginacao"
+			    icon="ion-loading-c"	
+			    on-infinite="loadMore()"
+			    distance="80%">
+		  </ion-infinite-scroll>
 	</ion-content>
 </ion-view>
