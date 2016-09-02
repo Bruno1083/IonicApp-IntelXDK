@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin:*");
 header("Content-Type: application/html; charset=UTF-8");
-  
+
     //formulário
 
     $data = file_get_contents("php://input");
@@ -13,7 +13,7 @@ header("Content-Type: application/html; charset=UTF-8");
     $senha = $objData->senha;
 
     // LIMPA OS DADOS
-    $nome = stripslashes($nome); 
+    $nome = stripslashes($nome);
     $email = stripslashes($email);
     $senha = stripslashes($senha);
 
@@ -26,7 +26,7 @@ header("Content-Type: application/html; charset=UTF-8");
 
 
     if($db){
-        $sql = "insert into usuarios values(NULL,'".$nome."','" .$email."','".md5($senha)."')";
+        $sql = "insert into usuarios values(NULL,'".$nome."','".$email."','".md5($senha)."')";
         $query = $db->prepare($sql);
         $query ->execute();
         echo "Os dados foram inseridos com sucesso. Obrigado e bem vindo!";

@@ -5,11 +5,11 @@
         <link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
         <link rel="stylesheet" type="text/css" href="ionic/css/ionicons.min.css">
         <title>Ionic App</title>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">      
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-        <style>        
+        <style>
                 @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
-                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }             
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
         </style>
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
@@ -27,15 +27,17 @@
         <script type="application/javascript" src="js/index_init_services.js"></script>
         <!-- CONTROLLER -->
         <script type="application/javascript" src="js/controller/app_controller.js"></script>
+        <script type="application/javascript" src="js/controller/app_loginController.js"></script>
           <!-- ROUTERS -->
           <script type="application/javascript" src="js/routers/app_routers.js"></script>
           <!-- SERVICES -->
           <script type="application/javascript" src="js/services/app_services.js"></script>
           <!-- VALUES -->
           <script type="application/javascript" src="js/values/app_valueDBLocal.js"></script>
+          <script type="application/javascript" src="js/values/app_DBLocalLogin.js"></script>
     </head>
     <body ng-app="myApp">
-        <ion-nav-view></ion-nav-view>        
+        <ion-nav-view></ion-nav-view>
     </body>
 
 </html>

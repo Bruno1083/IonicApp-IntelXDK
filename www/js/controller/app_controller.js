@@ -1,13 +1,13 @@
 (function() {
 	"use strict";
 
-	angular.module("myApp").controller("initCtrl", function($scope, Data, $ionicModal, $location, DBLocal, $ionicScrollDelegate){
+	angular.module("myApp").controller("initCtrl", function($scope, Data, $ionicModal, $location, DBLocal, DBLocalLoginDeUsuario,$ionicScrollDelegate){
 		$scope.home = "Contatos";
 		$scope.perfil = "Perfil";
 		$scope.contatos = [];
 		$scope.myswipe = true;
 		$scope.paginacao = true;
-		
+
 		$scope.loadMore = function() {
 			var  params = {
 				counter: $scope.contatos.length,
@@ -26,7 +26,7 @@
 			});
 		};
 
-		
+
 		// INSERINDO DADOS LOCALMENTE
 		DBLocal.localdb();
 
@@ -50,6 +50,18 @@
 			res.executeSql("DELETE FROM USER WHERE nome = ?;",[nome]);
 		});
 
+
+		//VERIFICAÇÃO DE CREDENCIAL DELOGIN DE USUARIO
+		DBLocalLoginDeUsuario.initLogin();
+
+		DBLocalLoginDeUsuario.db.transaction(function(res) {
+			var q = "SELECT * FROM LOGINUSUARIO";
+			res.executeSql(q, null, function(i, data) {
+				alert("Olá " + data.rows.item(i).nome);
+			});
+		});
+
+
 		//BANCO DE DADOS ONLINE
 		var getData = function(){
 			var  params = {
@@ -72,11 +84,11 @@
 		  });
 		 $scope.abreModal = function(){
 		 	$scope.modal.show();
-		 }; 			
+		 };
 		$scope.fechaModal = function(){
 		 	$scope.modal.hide();
-		 }; 	
-		 
+		 };
+
 		getData();
 		//ENVIANDO DADOS
 		$scope.cadastroUsuario = function(cadastro) {
@@ -90,7 +102,7 @@
 
 			console.log(cadastro);
 		};
-		
+
 		//APAGAR DADOS
 		$scope.apagar = function(contato) {
 			console.log(contato.id);

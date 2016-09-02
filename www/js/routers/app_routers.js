@@ -22,6 +22,15 @@
 				}
 			}
 		})
+		.state("menu.login", {
+			url:"/login",
+			views:{
+				'menuContent':{
+					templateUrl:"views/login.html",
+					controller: "initLogin"
+				}
+			}
+		})
 
 		.state("menu.perfil", {
 			url:"/perfil",
@@ -35,7 +44,7 @@
 		.state("menu.home.cadastro", {
 			url:"/cadastro",
 			templateUrl:"views/cadastro.html"
-			
+
 		});
 
 

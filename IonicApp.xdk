@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "c7d683c9-b778-4f80-b6bc-618d4f2d8916",
-      "lastModifiedDate": 1468439849328,
+      "lastModifiedDate": 1470426554467,
       "creationDate": 1457539527552
     },
     "XDK-app-designer": "true",
@@ -107,6 +107,7 @@
           "deployment-target": "6"
         },
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
@@ -121,7 +122,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "14",
@@ -138,6 +138,7 @@
           "windows-publisher-id": ""
         },
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
@@ -152,7 +153,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "14",
         "appVersion_": "0.0.0.1",
@@ -165,6 +165,7 @@
         "name_": "WebApp",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -179,7 +180,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -189,6 +189,7 @@
         "name_": "Chrome",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -203,7 +204,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -213,6 +213,7 @@
         "name_": "Firefox",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -227,7 +228,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -237,6 +237,7 @@
         "name_": "Facebook",
         "preferences_": {},
         "isActive_": false,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -251,7 +252,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1"
       },
@@ -261,6 +261,7 @@
         "name_": "WP81",
         "preferences_": {},
         "isActive_": true,
+        "certificateId_": "",
         "appName_": "IonicApp",
         "appID_": "not.yet.specified",
         "appAccess_": {
@@ -275,7 +276,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
         "appVersion_": "0.0.0.1",
         "cordovaCLIVersion_": "5.1.1",
         "appAuthor_": "Intel XDK"
@@ -291,6 +291,7 @@
           "Orientation": "portrait"
         },
         "isActive_": true,
+        "certificateId_": "BkgVAzVQLkqis_41qGVWJw2",
         "appName_": "IonicApp",
         "appID_": "com.IonicApp",
         "appAccess_": {
@@ -306,7 +307,6 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "BkgVAzVQLkqis_41qGVWJw2",
         "cordovaCLIVersion_": "5.1.1",
         "crosswalkVersion_": "15",
         "appVersion_": "0.0.1",
@@ -317,7 +317,9 @@
     },
     "gameAssetDirectory": "asset",
     "gameMetadata": {},
-    "projectTags": [],
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
     "testDirectory": "test"
   }
 }

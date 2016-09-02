@@ -18,7 +18,17 @@
 				            }
 			});
 		};
-
+		//recuperação de credencial
+		this.loginData = function(credential){
+			return $http({
+				method: "POST",
+				url: Config.getUrl + "apiLogin.php",
+				data: credential,
+				headers : {
+				                'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+				            }
+			});
+		};
 		//cadastro
 		this.setData = function(dados){
 			return $http({
@@ -40,6 +50,6 @@
 				            }
 			});
 		};
-	
+
 	});
 })();
